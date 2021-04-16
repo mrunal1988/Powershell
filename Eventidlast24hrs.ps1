@@ -1,0 +1,1 @@
+Get-eventlog -LogName System -EntryType Error -After (Get-Date).AddHours(-24) | select EventID, TimeGenerated, Message | Export-Csv -Path D:\Documents\Mrunal\eventid24.csv -NoTypeInformation
